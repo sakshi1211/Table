@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medal Count - Paris 2024 Olympic Medal Table</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        background-color: #f8f8f8;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    table{
+        width: 70vw;
+        border: none;
+        border-spacing: 0;
+    }
+    caption{
+        font-size: 20px;
+        font-weight: 500;
+         padding: 5px;
+        margin: 10px;
+    }
+    .country{
+        display: flex;
+        width: 60%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    tr{
+        text-align: center;
+        background-color: #ffffff;
+        box-shadow: 1px 3px 4px 3px rgb(203, 203, 203);
+        border: 2px solid rgb(47, 47, 47);
+    }
+    th{
+        background-color: #f8f8f8;
+    }
+    th,td{
+        padding: 17px;
+    }
+    .flag1 , .flag2 , .flag3, .flag4, .flag7, .flag8 , .flag5{
+        height: 30px;
+        width: 50px;
+    }
+    .flag2{
+        height: 60px;
+        width: 65px;
+    }
+    .flag6{
+        height: 43px;
+    }
+
+    .gold{
+        background-color: gold;
+        padding: 6px 10.5px;
+        border-radius: 50%;
+        font-weight: 400;
+    }
+    .bronge{
+        background-color: goldenrod;
+        padding: 6px 10.5px;
+        border-radius: 50%;
+        font-weight: 400;
+    }
+    .silver{
+        background-color: rgb(214, 214, 214);
+        padding: 6px 11px;
+        border-radius: 50%;
+        font-weight: 400;
+    }
+
+    .bi-plus-square{
+        padding: 5px;
+        font-size: 25px;
+    }
+    .nums{
+        font-size: 18px;
+        font-weight: 500;
+    }
+   
+    
+</style>
+
+<body>
+    <section>
+    <table>
+       <caption> Olympics 2024 - Medal Table</caption>
+        <thead>
+            <tr>
+                <th>Order</th>
+                <th>NOCs</th>
+                <th> 
+                    <span class="gold">G</span>
+                </th>
+                <th>
+                    <span class="silver">S</span>
+                </th>
+                <th>
+                    <span class="bronge">B</span>
+                </th>
+                <th>
+                    <span class="g"></span>
+                    <span class="s"></span>
+                    <span class="b"></span>
+                </th>
+                <th>
+                    &nbsp;
+                </th>
+            </tr>
+        </thead>
+
+
+        <tbody>
+
+        <tr>
+            <td class="nums" >1</td>
+            <td class="country"> &nbsp;&nbsp;<img class="flag1" src="../Images/USA-flag.webp" alt="USA-flag">  &nbsp;&nbsp;&nbsp;&nbsp;United States of America</td>
+            <td>19</td>
+            <td>26</td>
+            <td>26</td>
+            <td class="nums" >71</td>
+            <td>
+                <span class="bi bi-plus-square"></span>
+            </td>
+        </tr>
+
+        <!-- <tr>
+            <td>2</td>
+            <td class="country"> <img class="flag2" src="../Images/china-img.png" alt="china-img">  &nbsp;&nbsp;&nbsp;People's Republic of China</td>
+            <td>19</td>
+            <td>15</td>
+            <td>11</td>
+            <td>45</td>
+            <td>
+                <span class="bi bi-plus-square"></span>
+            </td>
+        </tr> -->
+
+        <tr>
+            <td class="nums" >2</td>
+            <td class="country"> &nbsp;&nbsp;<img class="flag3" src="../Images/Flag_of_France.png" alt="Flag_of_France">  &nbsp;&nbsp;&nbsp;&nbsp;France</td>
+            <td>12</td>
+            <td>14</td>
+            <td>18</td>
+            <td class="nums" >44</td>
+            <td>
+                <span class="bi bi-plus-square"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="nums" >3</td>
+            <td class="country"> &nbsp;&nbsp;<img class="flag4" src="../Images/Australia-flag.jpg" alt="Australia-flag">  &nbsp;&nbsp;&nbsp;&nbsp;Australia</td>
+            <td>12</td>
+            <td>11</td>
+            <td>8</td>
+            <td class="nums" >31</td>
+            <td>
+                <span class="bi bi-plus-square"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="nums" >4</td>
+            <td class="country"> &nbsp;&nbsp;<img class="flag5" src="../Images/Flag_of_britain.png" alt="Flag_of_britain">  &nbsp;&nbsp;&nbsp;&nbsp;Great Britain</td>
+            <td>10</td>
+            <td>12</td>
+            <td>15</td>
+            <td class="nums" >37</td>
+            <td>
+                <span class="bi bi-plus-square"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="nums" >5</td>
+            <td class="country"> <img class="flag6" src="../Images/Flag_of_South_Korea.png" alt="Flag_of_South_Korea"> &nbsp;&nbsp;&nbsp;Republic of Korea</td>
+            <td>10</td>
+            <td>7</td>
+            <td>7</td>
+            <td class="nums" >24</td>
+            <td>
+                <span class="bi bi-plus-square"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="nums" >6</td>
+            <td class="country">&nbsp;&nbsp;<img class="flag7" src="../Images/Japan-flag.jpg" alt=""> &nbsp;&nbsp;&nbsp;&nbsp; Japan</td>
+            <td>9</td>
+            <td>5</td>
+            <td>10</td>
+            <td class="nums" >24</td>
+            <td>
+                <span class="bi bi-plus-square"></span>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="nums" >7</td>
+            <td class="country">&nbsp;&nbsp; <img class="flag8" src="../Images/Italy-flag.png" alt=""> &nbsp;&nbsp;&nbsp;&nbsp;Italy</td>
+            <td>7</td>
+            <td>10</td>
+            <td>5</td>
+            <td class="nums" >22</td>
+            <td>
+                <span class="bi bi-plus-square"></span>
+            </td>
+        </tr>
+
+        </tbody>
+
+    <tfoot>
+       <td colspan="7"> <b>Last updated:</b>August 5, 2024 at 11:39 (your local time)
+        <br>
+        Does not include medals won by AIN.</td>
+    </tfoot>
+
+    </table>
+
+</section>
+</body>
+
+</html>
